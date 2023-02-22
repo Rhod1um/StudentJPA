@@ -1,0 +1,12 @@
+server.port:8080
+
+spring.datasource.url=jdbc:mysql://127.0.0.1:3307/student
+spring.datasource.username=${user}
+spring.datasource.password=${password}
+
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.show-sql=true
+
+nu står der h2 i application properties for at kunne køre det i skyen
+Det skal gøres uafhædnig af unit tests
