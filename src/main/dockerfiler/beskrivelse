@@ -1,0 +1,11 @@
+der er lavet mappe til flere dockerfiler
+
+lagt under main fordi erik så en anden der gjorde det sådan. main -> dockermappe -> dockerfiler
+
+husk når vi laver vm på azure skal vi installere
+mysql server på den og der skal trykkes at azuer
+skal bruge http port 3306, ikke 80 som vist er default
+når man laver en vm
+
+erik henter også docker på, bla med curl -fsSL ....
+kør det fra user folder

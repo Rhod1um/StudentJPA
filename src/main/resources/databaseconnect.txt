@@ -10,3 +10,19 @@ spring.jpa.show-sql=true
 
 nu står der h2 i application properties for at kunne køre det i skyen
 Det skal gøres uafhædnig af unit tests
+
+på azure laver vi en azure app service (fordi gratis?), ikke en static web service
+hvad er forskellen
+
+static web service laves hvor alt vælges på en side. det er bare html, ikke spring projekt
+vi kunne køre det projekt med ren html og javascipt der men ikke spring
+
+app service køre en virtuel maskine, der skal vælges flere ting, vælg java osv. køre spring
+når man pusher så kommer det først på github og køre actions og så på azure hvor det
+køres det gennem byggeserveren (det buildes) og så deployes
+
+man får en yaml github actions tilbage for begge
+
+azure app service får man sin egen url, ikke en autogeneret, åbenbart
+
+husk lav .github mappe og workflows mappe inde i, hvor yaml workflow filer lægges fra når man får yaml tilbage

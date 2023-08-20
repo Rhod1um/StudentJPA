@@ -15,11 +15,16 @@ public class StudRESTcontroller {
     @Autowired
     StudentRepository studentRepository;
 
-    @GetMapping("/stud1/{name}") //tager navn som parameter
-    public Student getStud1ByName(@PathVariable String name){
-        return new Student(name);
-    }
+    //@GetMapping("/stud1/{name}") //tager navn som parameter
+    //public Student getStud1ByName(@PathVariable String name){
+       // return new Student(name);
+    //}
+    //er udkommenteret fordi der er ambigous mapping så det ike kan køre
 
+    @GetMapping("/virker") //tager navn som parameter
+    public String virker(){
+        return "virker";
+    }
 
     @GetMapping("/stud1/{name}") //tager navn som parameter
     public Student getStud1ByName(@PathVariable Optional<String> name){ //virker ikke, kommer ikke ind på det her endpoint
